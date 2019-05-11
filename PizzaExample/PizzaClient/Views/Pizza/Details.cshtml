@@ -1,0 +1,26 @@
+﻿@model PizzaClient.ViewModel.PizzaViewModel
+
+@{
+    ViewBag.Title = "Detail Pizza";
+}
+
+<h2>Detail</h2>
+
+<div>
+    <h4>Pizza</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.Pizza.Name)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Pizza.Name)
+        </dd>
+
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("Edit", "EditPizza", new { id = Model.Pizza.Id }) |
+    @Html.ActionLink("Back to List", "GetAllPizzas")
+</p>
