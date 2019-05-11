@@ -5,6 +5,7 @@ Steps to run the project from Visual Studio:
 1. Re-Create the SQL server database, DB name = 'PizzaExample'. Execute script located at: PizzaExample\PizzaMenu\PizzaMenu\Database\DatabaseScript.sql
 2. Verify the ports your local apps (Client and API) are using to run. Edit Web.config at \PizzaExample\PizzaMenu\PizzaClient\Web.config to set the correct port number where API is running: <add key="ServiceUrl" value="http://localhost:49789/"></add>
 3. Press F5
+4. Go to the URL : http://localhost:[port]/Pizza/GetAllPizzas
 
 
 All the requirements have been accomplished. We are using the term 'Ingredient' instead of 'Topping'.
