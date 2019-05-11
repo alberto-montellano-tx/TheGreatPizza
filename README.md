@@ -1,10 +1,10 @@
 # TheGreatPizza
 An application that manages a Pizza menu for Test.
 
-Steps to run the project: 
-1. Re-Create the SQL server database, DB name = 'PizzaExample'. Execute script 
+Steps to run the project from Visual Studio: 
+1. Re-Create the SQL server database, DB name = 'PizzaExample'. Execute script located at: PizzaExample\PizzaMenu\PizzaMenu\Database\DatabaseScript.sql
 2. Verify the ports your local apps (Client and API) are using to run. Edit Web.config at \PizzaExample\PizzaMenu\PizzaClient\Web.config to set the correct port number where API is running: <add key="ServiceUrl" value="http://localhost:49789/"></add>
-
+3. Press F5
 
 
 All the requirements have been accomplished. We are using the term 'Ingredient' instead of 'Topping'.
@@ -28,4 +28,9 @@ The UI should display the results of using the API
 5.	Ability to add, and delete a topping from available toppings list - DONE
 
 Technologies used:
-DataStorage: SQL Server, Entity Framework
+
+DataStorage: SQL Server, ADO.NET Entity data model.
+API: ASP.NET Web Application - Web API
+Client: ASP.NET Web Application - MVC/Razor
+
+
